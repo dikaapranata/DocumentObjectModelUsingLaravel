@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/bglogin.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 50px auto;
+    width: 350px;
+    height: 500px;
+    background-color: #F8F8FF;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.heading {
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #4682B4;
+}
+
+.field {
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 40px;
+    background-color:#F8F8FF;
+    border: none;
+    border-bottom: 2px solid #DCDCDC;
+}
+
+::placeholder {
+    color: #778899;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+label {
+    color: #4682B4;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.span-container {
+    min-height: 20px;
+    margin-bottom: 25px;
+}
+
+.wrong {
+    display: inline;
+    color: #FF6347;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.loginBtn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 230px;
+    height: 42px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: none;
+    background-color: #40E0D0;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background-color: #778899;
+}
+
+button:active:not(:disabled) {
+    background-color: #FF6347;
+}
+
+button:disabled {
+    background-color: #778899;
+    box-shadow: none;
+    color: #DCDCDC;
+    cursor: default;
+}
